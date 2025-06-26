@@ -19,7 +19,8 @@ public class PlayerServiceImpl implements PlayerService {
     @Override
     public Player getPlayerById(int id) {
         if (!this.players.containsKey(id)) {
-            throw new NoSuchElementException("No such user: " + id);
+            //throw new NoSuchElementException("No such user: " + id);
+            return null;
         }
 
         return this.players.get(id);
