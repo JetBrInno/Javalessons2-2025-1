@@ -1,8 +1,10 @@
 package tests;
 
+import helpers.MyWatcher;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import ru.inno.course.player.model.Player;
 import ru.inno.course.player.service.PlayerService;
 import ru.inno.course.player.service.PlayerServiceImpl;
@@ -14,6 +16,7 @@ import java.util.Collection;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(MyWatcher.class)
 public class PlayerServiceDeleteTest {
     PlayerService playerService;
 

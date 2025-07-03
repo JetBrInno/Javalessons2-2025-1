@@ -1,6 +1,7 @@
 package tests;
 
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import ru.inno.course.player.model.Player;
@@ -24,6 +25,11 @@ public class PlayerServiceJunitTest {
     // 5. Повторяющиеся действия (предусловие, постусловие)
 
     PlayerService playerService;
+
+    @BeforeAll
+    public static void beforeAll() {
+        System.out.println("Этот код выполнится один раз");
+    }
 
     @BeforeEach
     public void createService() {
