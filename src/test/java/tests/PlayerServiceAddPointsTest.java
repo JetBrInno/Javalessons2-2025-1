@@ -33,6 +33,7 @@ public class PlayerServiceAddPointsTest {
     @ParameterizedTest
     @ValueSource(ints = {-100, 0, 100})
     @Tag("ДОМЕН-СИСТЕМА ОПЛАТЫ")
+   // @Disabled("Тест не актуален")
     // @Tags({@Tag("нег"),@Tag("регресс")})
    // @ValueSource(booleans = {true, false, true})
     @DisplayName("Начислить разное кол-во очков")
